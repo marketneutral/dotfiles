@@ -2,7 +2,6 @@
 (package-initialize)
 
 (require 'elpy)
-;;(require 'magit)
 (require 'markdown-mode)
 
 (add-to-list 'package-archives
@@ -26,9 +25,12 @@
       (scroll-bar-mode -1)
       (tool-bar-mode -1)
       (set-face-attribute 'default nil :height 160)
-      (load-theme 'material t)
       )
-)
+  )
+
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize)
+  )
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'afterglow t)
