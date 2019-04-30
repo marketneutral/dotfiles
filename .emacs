@@ -62,5 +62,5 @@
 (global-set-key (kbd "C-h") 'delete-backward-char)
 
 ;; this makes the auto split vertical
-(setq split-height-threshold nil)
-(setq split-width-threshold 0)
+;;(setq split-height-threshold nil)
+;;(setq split-width-threshold 0)
