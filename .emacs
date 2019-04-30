@@ -1,4 +1,4 @@
-;; TERM=xterm-256color
+;; TERM=xterm-256color   <-- should be in .bashrc
 
 ;; M-x package-refresh-contents
 ;; M-x package-install elpy ...
@@ -14,6 +14,14 @@
 ;; emacs test.py
 ;; do a C-x C-f [Enter] C-x b [Enter]
 ;; which forces a clear screen
+
+;; TODO: allow for conda environments
+;; need environment variable in bashrc
+;; WORKON_HOME=/home/{user}/.conda/envs   <-- we do this for --user conda envs
+;; then add
+;; (pyvenv-mode 1) to .emacs
+;; After that, to choose environment, M-x pyvenv-workon
+
 
 (require 'package)
 (package-initialize)
