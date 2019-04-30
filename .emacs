@@ -1,12 +1,11 @@
 (require 'package)
 (package-initialize)
-
-(require 'elpy)
-(require 'markdown-mode)
-
 (add-to-list 'package-archives
 	     '("melpa-stable"
 	       . "https://stable.melpa.org/packages/"))
+
+(require 'elpy)
+(require 'markdown-mode)
 
 (blink-cursor-mode 0)
 (setq inhibit-startup-screen t)
