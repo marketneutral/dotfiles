@@ -1,3 +1,20 @@
+;; TERM=xterm-256color
+
+;; M-x package-refresh-contents
+;; M-x package-install elpy ...
+
+;; mkdir ~/.emacs.d
+;; cd ~/.emacs.d
+;; mkdir themes
+;; cd themes
+;; curl -L https://raw.githubusercontent.com/sjahl/emacs-theme-afterglow/master/afterglow-theme.el > afterglow-theme.el
+
+;; in Jupyter terminal, there is an open bug with Xterm.js that cuases emacs to underline everything
+;; The work around is after you do, say...
+;; emacs test.py
+;; do a C-x C-f [Enter] C-x b [Enter]
+;; which forces a clear screen
+
 (require 'package)
 (package-initialize)
 (add-to-list 'package-archives
