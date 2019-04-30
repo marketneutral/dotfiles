@@ -20,3 +20,5 @@ unset __conda_setup
 export "THEANO_FLAGS='gcc.cxxflags=-Wno-c++11-narrowing'"
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\] \[\033[33;1m\]\w\[\033[m\] (\$(git branch 2>/dev/null | grep '^*')) \n$ "
 export TERM=xterm-256color
+
+alias ls='ls -ahF --color'
