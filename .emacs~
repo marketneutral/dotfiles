@@ -31,4 +31,5 @@
 )
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'afterglow t)
+;;(load-theme 'afterglow t)
+(load-theme 'wheatgrass)
