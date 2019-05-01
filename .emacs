@@ -59,7 +59,11 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'afterglow t)
 
+;; for ssh via Windows CMD, the backspace key doesn't work unless you add this
 (global-set-key (kbd "C-h") 'delete-backward-char)
+
+(custom-set-variables
+  '(markdown-command "pandoc"))
 
 ;; this makes the auto split vertical
 ;;(setq split-height-threshold nil)
