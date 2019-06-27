@@ -1,7 +1,17 @@
 export "THEANO_FLAGS='gcc.cxxflags=-Wno-c++11-narrowing'"
 export TERM=xterm-256color
 
-alias ls='ls -ahF --color'
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Darwin' ]]; then
+   platform='macos'
+fi
+
+if [[ $platform == 'unknown' ]]; then
+   alias ls='ls -ahF --color'
+elif [[ $platform == 'macos' ]]; then
+   alias ls='ls -ahFG'
+fi
 
 export GIT_PROMPT_ONLY_IN_REPO=0
 # cd ~
