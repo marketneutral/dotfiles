@@ -1,5 +1,6 @@
 export "THEANO_FLAGS='gcc.cxxflags=-Wno-c++11-narrowing'"
 export TERM=xterm-256color
+export EDITOR=emacs
 
 platform='unknown'
 unamestr=`uname`
