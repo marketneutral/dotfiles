@@ -70,6 +70,8 @@
 (moe-theme-set-color 'magenta)
 (powerline-moe-theme)
 (setq powerline-arrow-shape 'slant)
+(linum-mode)
+(setq linum-format "%3d\u2502")
 
 ;; for ssh via Windows CMD, the backspace key doesn't work unless you add this
 (global-set-key (kbd "C-h") 'delete-backward-char)
