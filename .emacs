@@ -65,11 +65,12 @@
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 ;;(load-theme 'afterglow t)
-;;(load-theme 'solarized-dark t)
 (require 'moe-theme)
 (load-theme 'moe-dark t)
 (moe-theme-set-color 'orange)
 (powerline-moe-theme)
+;;(powerline-center-theme)
+(load-theme 'zenburn t)
 (setq powerline-arrow-shape 'slant)
 (linum-mode)
 (setq linum-format "%3d\u2502")
@@ -93,14 +94,14 @@
    (vector "#ffffff" "#f36c60" "#8bc34a" "#fff59d" "#4dd0e1" "#b39ddb" "#81d4fa" "#262626"))
  '(custom-safe-themes
    (quote
-    ("26d49386a2036df7ccbe802a06a759031e4455f07bda559dcf221f53e8850e69" "a24c5b3c12d147da6cef80938dca1223b7c7f70f2f382b26308eba014dc4833a" "732b807b0543855541743429c9979ebfb363e27ec91e82f463c91e68c772f6e3" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "b9a06c75084a7744b8a38cb48bc987de10d68f0317697ccbd894b2d0aca06d2b" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
+    ("6b2c6e5bc1e89cf7d927d17f436626eac98a04fdab89e080f4e193f6d291c93d" "26d49386a2036df7ccbe802a06a759031e4455f07bda559dcf221f53e8850e69" "a24c5b3c12d147da6cef80938dca1223b7c7f70f2f382b26308eba014dc4833a" "732b807b0543855541743429c9979ebfb363e27ec91e82f463c91e68c772f6e3" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "b9a06c75084a7744b8a38cb48bc987de10d68f0317697ccbd894b2d0aca06d2b" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
  '(elpy-rpc-python-command "python3")
  '(fci-rule-color "#3a3a3a")
  '(hl-sexp-background-color "#121212")
  '(markdown-command "pandoc")
  '(package-selected-packages
    (quote
-    (solarized-theme smart-mode-line-powerline-theme smart-mode-line company-anaconda powerline persistent-soft material-theme markdown-mode jedi ergoemacs-mode elpy anaconda-mode)))
+    (zen-mode color-theme-sanityinc-solarized solarized-theme smart-mode-line-powerline-theme smart-mode-line company-anaconda powerline persistent-soft material-theme markdown-mode jedi ergoemacs-mode elpy anaconda-mode)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
