@@ -9,9 +9,9 @@ if [[ "$unamestr" == 'Darwin' ]]; then
 fi
 
 if [[ $platform == 'unknown' ]]; then
-   alias ls='ls -ahF --color'
+   alias ls='ls -hF --color'
 elif [[ $platform == 'macos' ]]; then
-   alias ls='ls -ahFG'
+   alias ls='ls -hFG'
 fi
 
 export GIT_PROMPT_ONLY_IN_REPO=0
@@ -20,5 +20,4 @@ export GIT_PROMPT_ONLY_IN_REPO=0
 source ~/.bash-git-prompt/gitprompt.sh
 
 export ZIPLINE_ROOT=/home/jovyan/shared/.zipline
-export PYTHON_VERSION=3.5
-source ~/.bashrc
+
