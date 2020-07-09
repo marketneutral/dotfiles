@@ -21,3 +21,4 @@ source ~/.bash-git-prompt/gitprompt.sh
 
 export ZIPLINE_ROOT=/home/jovyan/shared/.zipline
 export PYTHON_VERSION=3.5
+source ~/.bashrc

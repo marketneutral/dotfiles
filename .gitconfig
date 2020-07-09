@@ -15,3 +15,6 @@
 	tree = log --oneline --graph --all --decorate
 [credential]
 	helper = store
+[user]
+	name = Jonathan Larkin
+	email = jlarkin@columbia-imc.org
