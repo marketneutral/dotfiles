@@ -25,13 +25,13 @@
 (require 'package)
 (package-initialize)
 
-(setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
-			 ("gnu" . "http://elpa.gnu.org/packages/")
-			 ("marmalade" . "http://marmalade-repo.org/packages/")))
+;;(setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
+;;			 ("gnu" . "http://elpa.gnu.org/packages/")
+;;			 ("marmalade" . "http://marmalade-repo.org/packages/")))
 
 (add-to-list 'package-archives
-	     '("melpa-stable"
-	       . "https://stable.melpa.org/packages/"))
+	     '("melpa"
+	       . "https://melpa.org/packages/") t)
 
 (require 'elpy)
 (require 'markdown-mode)
@@ -46,10 +46,10 @@
 (setq global-linum-mode t)
 (setq column-number-mode t)
 
-(cua-mode t)
-(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
-(transient-mark-mode 1) ;; No region when it is not highlighted
-(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+;;(cua-mode t)
+;;(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+;;(transient-mark-mode 1) ;; No region when it is not highlighted
+;;(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
 
 (remove-hook 'flymake-diagnostic-functions 'flymake-proc-legacy-flymake)
 (elpy-enable)
@@ -74,9 +74,10 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 ;;(load-theme 'afterglow t)
 ;;(load-theme 'clues t)
-
+(load-theme 'zenburn t)
 (require 'moe-theme)
-(load-theme 'moe-dark t)
+;;(load-theme 'moe-dark t)
+;;(load-theme 'atom-one-dark t)
 (moe-theme-set-color 'orange)
 (powerline-moe-theme)
 ;;(powerline-center-theme)
@@ -95,3 +96,17 @@
 
 ;; Set safe variable
 (put 'docker-image-name 'safe-local-variable #'stringp)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (zenburn-theme zen-mode solarized-theme powerline moe-theme markdown-mode elpy dockerfile-mode docker color-theme-sanityinc-solarized atom-one-dark-theme ample-zen-theme ample-theme))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
