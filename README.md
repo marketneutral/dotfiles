@@ -1,4 +1,7 @@
 # dotfiles
 
-- move the dotfile to `~/dotfiles`; e.g., `mv ~/.emacs ~/dotfiles/`
-- simlink the dotfile back to home; i.e., `ln -sv ~/dotfiles/.emacs ~`
+From your home directory, you need to simlink the file you want to use:
+
+`ln -s ~/dotfiles/.bash_profile ~/.bash_profile`
+
+(syntax is <source> <dest>)
